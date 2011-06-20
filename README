@@ -1,0 +1,13 @@
+Squalar Spectral Map is a simple package that takes a term-document matrix, calculates a term co-occurrence matrix, calculates its eigendecomposition with SVD, and finally maps terms to the visible spectrum by comparing a term's co-occurrence vector to the eigenvectors.
+
+Third-party work includes Svdlib by Adrian Kuhn and David Erni, and an image of the visible spectrum by Deborah S Krolls (http://commons.wikimedia.org/wiki/File:Spectrum4websiteEval.png).
+
+Two files are needed to create the document spectrum:
+1) Libsvm-formatted sparse term-document matrix.
+2) Ordered list of index terms.
+
+The class org.squalar.spectralmap.Decompose will perform the decomposition (see the javadoc for parameters).
+
+Based on the decomposition, the class org.squalar.spectralmap.TermSpectrum will create a png image of the spectrum of a given term (see the javadoc for parameters).
+
+For more details and publications, visit http://squalar.org.
